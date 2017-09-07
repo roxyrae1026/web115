@@ -1,0 +1,38 @@
+html {
+   
+    background-color: #042a99;
+    
+}
+
+
+
+#pufferfish { 
+width: 300px;
+height: 300px;
+position: relative;
+left:200px;
+-webkit-animation-name: pufferfish-move; /* Chrome, Safari, Opera */
+-webkit-animation-duration: 6s; /* Chrome, Safari, Opera */
+animation-name:pufferfish-move;
+animation-duration: 6s;
+    animation-iteration-count: 3;
+}
+
+@keyframes pufferfish-move {
+0% {left:200px; top:0px;}
+25% {left:500px; top:0px;}
+50% {left:500px; top:200px;}
+75% {left:200px; top:200px;}
+100% {left:200px; top:0px;}
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: pufferfish;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-direction: reverse;
+}
